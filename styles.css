@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b0bece; /* Color del fondo */
+    margin: 0;
+    font-family: 'Times New Roman', serif; /* Fuente global */
+    background-image: url('/fondo6.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background-color: #A8E6CF; /* Verde pastel */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    border-radius: 15px; 
+    text-align: center; /* Centrar contenido */
+    margin-top: 50px; /* Ajusta el valor según necesidad */
+}
+
+
+
+/* Pantalla */
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #FFFFFF; /* Blanco */
+    color: #2E7D32; /* Verde oscuro */
+    font-size: 24px; /* Tamaño más grande */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 60px;
+    text-align: right;
+}
+
+#display {
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    text-align: right;
+    font-size: 2em; /* Hace el número más grande */
+    font-family: 'Times New Roman', serif; /* Fuente principal */
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas del mismo tamaño */
+    gap: 8px; /* Espacio uniforme entre botones */
+    justify-items: center; /* Centra los botones */
+}
+
+button {
+    width: 70px;  /* Todos los botones del mismo ancho */
+    height: 70px; /* Todos los botones del mismo alto */
+    font-size: 1.4em;
+    background-color: #81C784; /* Verde medio */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.zero {
+    grid-column: span 2; /* Hace que el botón "0" ocupe dos columnas */
+    width: 100%; /* Asegura que se ajuste al grid */
+}
+
+button:hover {
+    background-color: #C8E6C9; /* Verde más claro */
+    color: #2E7D32;
+}
+
+/* Botón "+" más grande */
+.plus {
+    grid-row: span 2;
+    height: 100%;
+}
+
+
+/* Estilo para las imágenes laterales */
+.imagen-lado {
+    width: 150px;  
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 40px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Mensaje sarcástico */
+#sarcasmo {
+    font-size: 16px; /* Asegura que se vea */
+    font-family: 'Times New Roman', serif; /* Se quitó la cursiva */
+    color: rgb(124, 119, 116); /* Para que resalte más */
+    text-align: center;
+}
+.logo { 
+  width: 130px; /* Ajusta el tamaño según necesites */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 80%; /* Hace que la imagen sea redonda */
+  position: absolute; /* Permite posicionarla en la calculadora */
+    top: 10px; /* Ajusta la posición verticalmente */
+    left: 10px; /* Ajusta la posición horizontalmente */
+}  

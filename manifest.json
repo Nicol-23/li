@@ -1,0 +1,21 @@
+{
+    "name": "Enigmalator LI",
+    "short_name": "Enigmalator",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#A8E6CF",
+    "theme_color": "#81C784",
+    "icons": [
+      {
+        "src": "(icon.png)",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "(icon.png)",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
